@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:progress_indicator/src/painter/circular_progress.dart';
 import 'package:progress_indicator/src/widgets/progress_circular_indicator/circular_progress_widget.dart';
 import 'package:progress_indicator/src/widgets/progress_circular_indicator/linear_progress_widget.dart';
 

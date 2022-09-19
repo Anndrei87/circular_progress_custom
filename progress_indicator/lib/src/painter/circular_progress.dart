@@ -4,6 +4,7 @@ import 'dart:math';
 class CircleProgress extends CustomPainter {
   final double currentProgress;
   CircleProgress(this.currentProgress);
+
   @override
   void paint(Canvas canvas, Size size) {
     Paint circle = Paint()
@@ -22,8 +23,13 @@ class CircleProgress extends CustomPainter {
       ..strokeCap = StrokeCap.round;
 
     double angle = 2 * pi * (currentProgress / 100);
-    canvas.drawArc(Rect.fromCircle(center: center, radius: radius), pi / 2,
-        angle, false, animationArc);
+    canvas.drawArc(
+      Rect.fromCircle(center: center, radius: radius),
+      pi / 2,
+      angle,
+      false,
+      animationArc,
+    );
   }
 
   @override
